@@ -1,0 +1,10 @@
+{#for c in customers}
+    <tr>
+        <td>{c.id}</td>
+        <td>{c.firstName}</td>
+        <td>{c.lastName}</td>
+        <td>
+            <button class="btn btn-outline-secondary"  hx-get="/rental/customer/{c.id}">Select</button>
+        </td>
+    </tr>
+{/for}

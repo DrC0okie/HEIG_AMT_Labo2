@@ -1,0 +1,10 @@
+{#for f in films}
+    <tr>
+        <td>{f.inventoryId}</td>
+        <td>{f.title}</td>
+        <td>{f.description}</td>
+        <td>
+            <button class="btn btn-outline-secondary"  hx-get="/rental/film/{f.inventoryId}">Select</button>
+        </td>
+    </tr>
+{/for}

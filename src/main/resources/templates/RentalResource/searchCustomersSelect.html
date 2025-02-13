@@ -1,0 +1,10 @@
+<tr class="table-primary">
+    <td>{customer.id}</td>
+    <td>{customer.firstName}</td>
+    <td>{customer.lastName}</td>
+    <td>
+        <button id="customer-unselect" class="btn btn-secondary" hx-post="/rental/customer/search" hx-include="#customer-search" hx-target="#search-customer-results">Unselect</button>
+        <input type="hidden" name="customer" id="rental-submit" value="{customer.id}">
+    </td>
+</tr>
+

@@ -1,0 +1,10 @@
+<tr class="table-primary">
+    <td>{film.inventoryId}</td>
+    <td>{film.title}</td>
+    <td>{film.description}</td>
+    <td>
+        <button id="film-unselect" class="btn btn-secondary" hx-post="/rental/film/search" hx-include="#search" hx-target="#search-results">Unselect</button>
+        <input type="hidden" name="inventory" id="rental-submit" value="{film.inventoryId}">
+    </td>
+</tr>
+
